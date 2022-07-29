@@ -13,7 +13,10 @@ version = "0.0.4"
 [dependencies]
 futures = "0.3"
 serde = "1"
-zbus = "2"
+zbus = "3"
+
+[patch.crates-io]
+zbus = { version = "3", git = "https://gitlab.freedesktop.org/dbus/zbus", branch = "main" }
 
 [dev-dependencies]
 tokio = {version = "1", features = ["full"]}
